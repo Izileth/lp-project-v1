@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { PORTFOLIO_IMAGES } from '../../constants';
+
+const imageModules = import.meta.glob('../../assets/images/*.{jpg,jpeg,png,gif,webp}', { eager: true });
+const PORTFOLIO_IMAGES = Object.values(imageModules).map((module: any) => module.default);
 
 const PortfolioSection = () => {
   const [currentImage, setCurrentImage] = useState(0);

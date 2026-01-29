@@ -16,7 +16,6 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({ src, className }) => 
         muted
         playsInline
       />
-      {/* Overlay for fade effect and text readability */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
     </div>
   );

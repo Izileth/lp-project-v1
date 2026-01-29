@@ -8,7 +8,7 @@ interface HeroSectionProps {
 const HeroSection = ({ scrollToSection }: HeroSectionProps) => (
   <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
     {/* Adicione seu arquivo de vídeo em src/assets/videos/hero-background.mp4 */}
-    <VideoBackground src="/hero-background.mp4" className="absolute inset-0 z-0" />
+    <VideoBackground src="https://v1.pinimg.com/videos/mc/720p/87/a1/c0/87a1c04025a916f2adda317239c16c4d.mp4" className="absolute inset-0 z-0" />
     <div className="absolute inset-0 bg-black opacity-50 z-10"></div> {/* Overlay para escurecer o vídeo e melhorar a leitura */}
 
     <motion.div

@@ -19,7 +19,7 @@ const StatsSection = () => (
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.4 + index * 0.1 }}
-        className="border border-white/20 p-6 hover:border-white/40 transition-all duration-300"
+        className="border border-white/20 p-6 mb-20 hover:border-white/40 transition-all duration-300"
       >
         <div className="text-4xl md:text-5xl font-bold mb-2 gradient-text">{stat.number}</div>
         <div className="text-white/60 uppercase tracking-wider text-sm">{stat.label}</div>
