@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import VideoBackground from '../VideoBackground'; // Certifique-se de que o caminho está correto
 
 interface HeroSectionProps {
   scrollToSection: (sectionId: string) => void;
@@ -6,13 +7,15 @@ interface HeroSectionProps {
 
 const HeroSection = ({ scrollToSection }: HeroSectionProps) => (
   <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-    <div className="absolute inset-0 bg-gradient-to-br from-black via-black to-zinc-900"></div>
+    {/* Adicione seu arquivo de vídeo em src/assets/videos/hero-background.mp4 */}
+    <VideoBackground src="/hero-background.mp4" className="absolute inset-0 z-0" />
+    <div className="absolute inset-0 bg-black opacity-50 z-10"></div> {/* Overlay para escurecer o vídeo e melhorar a leitura */}
 
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: 0.3 }}
-      className="container mx-auto px-6 py-20 relative z-10 text-center"
+      className="container mx-auto px-6 py-20 relative z-20 text-center" // Aumentado z-index para garantir que o conteúdo fique acima do vídeo e overlay
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}

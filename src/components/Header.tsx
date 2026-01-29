@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-
+import Logo from '../assets/icon_clear.png'
 interface HeaderProps {
   isMenuOpen: boolean;
   activeSection: string;
@@ -16,12 +16,7 @@ const Header = ({ isMenuOpen, activeSection, scrollToSection, toggleMenu }: Head
     className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-md border-b border-white/10"
   >
     <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-      <motion.h1
-        className="text-3xl md:text-4xl font-bold gradient-text tracking-tight"
-        whileHover={{ scale: 1.02 }}
-      >
-        LIFESTYLE
-      </motion.h1>
+      <img src={Logo} alt="Logo" className="w-16 h-12" />
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-8">

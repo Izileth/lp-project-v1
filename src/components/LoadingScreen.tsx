@@ -69,7 +69,7 @@ const LoadingScreen = () => {
           <motion.img
             src={iconClear}
             alt="Lifestyle Logo"
-            className="w-48 h-48 relative z-10"
+            className="w-60 h-48 relative z-10"
             animate={{ 
               scale: [1, 1.02, 1],
             }}
@@ -136,7 +136,7 @@ const LoadingScreen = () => {
           transition={{ delay: 1, duration: 1 }}
         >
           <motion.p
-            className="text-white/30 text-xs uppercase tracking-[0.3em] font-light"
+            className="text-white text-xs uppercase tracking-[0.3em] font-light"
             animate={{ opacity: [0.3, 0.5, 0.3] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
