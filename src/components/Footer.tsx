@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 interface FooterProps {
@@ -21,7 +21,7 @@ const Footer = ({ scrollToSection }: FooterProps) => (
           <div className="space-y-3 text-sm text-white/60">
             <div className="flex items-center">
               <Phone className="w-4 h-4 mr-2" />
-              <span>(11) 99999-9999</span>
+              <span>(91) 98547-9540</span>
             </div>
             <div className="flex items-center">
               <Mail className="w-4 h-4 mr-2" />
@@ -29,7 +29,7 @@ const Footer = ({ scrollToSection }: FooterProps) => (
             </div>
             <div className="flex items-center">
               <MapPin className="w-4 h-4 mr-2" />
-              <span>São Paulo, SP</span>
+              <span>Belém, PA</span>
             </div>
           </div>
         </div>
