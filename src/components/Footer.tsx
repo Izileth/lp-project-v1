@@ -1,5 +1,6 @@
 
 import { Phone, Mail, MapPin } from 'lucide-react';
+import EmailButton from './EmailButton';
 
 interface FooterProps {
   scrollToSection: (sectionId: string) => void;
@@ -7,6 +8,7 @@ interface FooterProps {
 
 const Footer = ({ scrollToSection }: FooterProps) => (
   <footer className="border-t border-white/10 py-12 relative">
+    <EmailButton />
     <div className="container mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>

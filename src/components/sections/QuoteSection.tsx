@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
 import QuoteForm from '../QuoteForm';
-import { WHATSAPP_NUMBER, WHATSAPP_INITIAL_MESSAGE } from '../../constants';
 
 const QuoteSection = () => (
   <section id="orcamento" className="min-h-screen py-24 relative">
@@ -23,19 +21,6 @@ const QuoteSection = () => (
       </motion.div>
 
       <QuoteForm />
-
-      <div className="mt-8 pt-8 border-t border-white/20 text-center">
-        <p className="text-white/60 mb-4">Ou entre em contato directamente:</p>
-        <a
-          href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_INITIAL_MESSAGE)}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center text-white hover:text-white/80 transition-colors"
-        >
-          <MessageCircle className="w-5 h-5 mr-2" />
-          <span className="font-semibold">WhatsApp</span>
-        </a>
-      </div>
     </div>
   </section>
 );
