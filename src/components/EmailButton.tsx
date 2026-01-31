@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 const EmailButton: React.FC = () => {
@@ -8,8 +9,13 @@ const EmailButton: React.FC = () => {
   };
 
   return (
-    <button
+    <motion.button
       onClick={handleEmailClick}
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      transition={{ delay: 1.1, type: 'spring' }}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
       className="fixed bottom-28 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300 z-50"
       aria-label="Entre em contato por email"
     >
@@ -27,7 +33,7 @@ const EmailButton: React.FC = () => {
           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
         />
       </svg>
-    </button>
+    </motion.button>
   );
 };
 
